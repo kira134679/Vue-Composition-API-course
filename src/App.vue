@@ -90,6 +90,7 @@
 	const onSave = () => {
 		const index = products.value.findIndex(item => item.id === tempEditValue.value.id);
 		products.value[index].name = tempEditValue.value.name;
+		tempEditValue.value = {};
 	}
 </script>
 
